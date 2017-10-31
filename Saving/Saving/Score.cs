@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FileHelpers;
 
 namespace Saving
 {
-    class Score
+    [DelimitedRecord(",")]
+    public class Score
     {
-        public int SCORE = 501;
+        public int SCORE;
     }
 }
